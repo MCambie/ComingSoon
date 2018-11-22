@@ -18,37 +18,38 @@ const  Carrousel = (props) => {
     <div
       className='carrousel_wrapper'
       style={{
-        height:'${window.innerHeight}px',
+        height:`${window.innerHeight}px`,
         overflow:'hidden'
       }}
     >
     <Slider {...settings}>
-
+        <div>
           <div
             className='carrousel_image'
             style={{
-              background:'url(${slide_one})',
-              height:'${window.innerHeight}px'
+              background:`url(${slide_one})`,
+              height:`${window.innerHeight}px`
             }}
           ></div>
-
-
+        </div>
+        <div>
           <div
             className='carrousel_image'
             style={{
-              height:'${window.innerHeight}px',
-              background:'url(${slide_two})'
+              height:`${window.innerHeight}px`,
+              background:`url(${slide_two})`
             }}
           ></div>
-
+        </div>
+        <div>
           <div
             className='carrousel_image'
             style={{
-              height:'${window.innerHeight}px',
-              background:'url(${slide_three})'
+              height:`${window.innerHeight}px`,
+              background:`url(${slide_three})`
             }}
           ></div>
-        
+        </div>
       </Slider>
     </div>
   )
